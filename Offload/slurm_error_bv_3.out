@@ -1,0 +1,38 @@
+/workspace/xhua24/miniconda3/lib/python3.7/site-packages/matplotlib/font_manager.py:232: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment.
+  'Matplotlib is building the font cache using fc-list. '
+Traceback (most recent call last):
+  File "BV3.py", line 176, in <module>
+    size_bvr[i] = bvr_cal(train,pool,test)
+  File "BV3.py", line 153, in bvr_cal
+    X, y = fetch_data(classification_dataset, return_X_y=True)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/site-packages/pmlb/pmlb.py", line 71, in fetch_data
+    dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
+  File "/workspace/xhua24/miniconda3/lib/python3.7/site-packages/pandas/io/parsers.py", line 702, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/site-packages/pandas/io/parsers.py", line 413, in _read
+    filepath_or_buffer, encoding, compression)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/site-packages/pandas/io/common.py", line 202, in get_filepath_or_buffer
+    req = _urlopen(filepath_or_buffer)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/urllib/request.py", line 641, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/urllib/request.py", line 563, in error
+    result = self._call_chain(*args)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/urllib/request.py", line 755, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/urllib/request.py", line 641, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/workspace/xhua24/miniconda3/lib/python3.7/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal Server Error
